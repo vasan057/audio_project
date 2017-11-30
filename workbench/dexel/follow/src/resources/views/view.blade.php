@@ -1,0 +1,1 @@
+This is demo view file for Dexel\Follow package using blade template

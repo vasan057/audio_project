@@ -1,0 +1,88 @@
+ul.sharebox-buttons,
+ul.sharebox-buttons li {
+	display:inline-block;
+	font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-size:12px;
+	margin:0;
+	padding:0;
+	vertical-align:middle;
+}
+ul.sharebox-buttons li {
+	margin-left:0;
+	margin-right:0.5em;
+}
+ul.sharebox-buttons li:last-child {
+	margin-right:0;
+}
+ul.sharebox-buttons li a {
+	background:#none;
+	border:none!important;
+	color:#000 !important;
+	display:inline-block;
+	font-size:inherit;
+	font-family:inherit;
+	font-weight:normal;
+	line-height:1;
+	margin:0;
+	padding:0;
+	text-decoration:none;
+	width: 	35px; 
+	height: 35px; 
+	box-sizing: border-box;
+}
+ul.sharebox-buttons li a:hover {
+	/*background-color: #90dbf1;*/
+	/*border-bottom: solid 2px #626262!important;*/
+}
+ul.sharebox-buttons li a span {
+	background-position:center center;
+	background-size: 60% 60%;
+	background-repeat:no-repeat;
+	display:block;
+	width: 100%;
+	height: 100%; 
+	opacity: .7;
+	text-indent: -999em;
+}
+ul.sharebox-buttons li a:hover span {
+	opacity:1;
+}
+
+/* Icons */
+li.share-digg a > span {
+	background-image:url(icons/digg.png);
+}
+li.share-google-plus a > span {
+	background-image:url(icons/google-plus_white.png);
+}
+li.share-facebook a > span {
+	background-image:url(icons/facebook_white.png);
+}
+li.share-linkedin a > span {
+	background-image:url(icons/linkedin_white.png);
+}
+li.share-pinterest a > span {
+	background-image:url(icons/pinterest_white.png);
+}
+li.share-pocket a > span {
+	background-image:url(icons/pocket.png);
+}
+li.share-reddit a > span {
+	background-image:url(icons/reddit.png);
+}
+li.share-stumbleupon a > span {
+	background-image:url(icons/stumbleupon.png);
+}
+li.share-tumblr a > span {
+	background-image:url(icons/tumblr.png);
+}
+li.share-twitter a > span {
+	background-image:url(icons/twitter_white.png);
+}
+
+li.share-email a > span {
+	background-image:url(icons/email.png);
+}
+li.share-print a > span {
+	background-image:url(icons/print.png);
+}

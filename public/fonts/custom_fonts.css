@@ -1,0 +1,23 @@
+@font-face {
+
+    font-family: 'Chalkduster';
+
+    src: url('ChalkDust.ttf') format("truetype");
+
+}
+
+@font-face {
+
+    font-family: 'Optima';
+
+    src: url('Optima.ttf') format("truetype");
+
+}
+
+@font-face {
+
+    font-family: 'Krungthep';
+
+    src: url('Krungthep.ttf') format("truetype");
+
+}

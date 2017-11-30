@@ -1,0 +1,2011 @@
+@font-face {
+    font-family: 'Optim';
+    src: url('../fonts/optim/Optim.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* =======================================================
+*
+*   Reset Styles
+*
+* ======================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+html {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+caption,
+th,
+td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+q,
+blockquote {
+    quotes: none;
+}
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+    content: "";
+    content: none;
+}
+a img {
+    border: none;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+html {
+    font-size: 112.5%;
+    line-height: 1.33333em;
+}
+html {
+    overflow-y: auto;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    background-color: #fff;
+}
+body,
+html,
+a,
+button,
+input {
+    outline: none;
+}
+body {
+    text-align: center;
+    overflow-x: hidden;
+}
+a {
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+a:hover,
+a:active,
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+input:focus {
+    border-color: transparent;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure {
+    color: #000;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+}
+::-webkit-selection {
+    color: #fff;
+    background: #F36363;
+}
+::-moz-selection {
+    color: #fff;
+    background: #F36363;
+}
+::selection {
+    color: #fff;
+    background: #F36363;
+}
+/* =======================================================
+*
+*   Template Style
+*
+* ======================================================= */
+
+body {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #828282;
+    background: #fff;
+    /*  font-family: 'Optim';*/
+
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+}
+#page {
+    position: relative;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.dexel-customer-maincontainer {
+    margin-top: 6%;
+}
+.dexel-customer-maincontainer .panel-primary {
+    border: 1px solid transparent;
+}
+.dexel-customer-maincontainer .customer-collection-card {
+    margin: 12px 0;
+}
+.btn-collection {
+    background: transparent !important;
+    border: 1px solid #96549e ;
+    color: #96549e;
+    border-radius: 30px !important;
+    outline: none !important;
+}
+/* =======================================================
+*
+*    Customer Search Styles
+*
+* ======================================================= */
+
+#custom-search-input {
+    padding: 0 3px;
+    border: solid 1px #96549e;
+    border-radius: 6px;
+    background-color: transparent;
+    border-radius: 30px;
+}
+#custom-search-input input {
+    border: 0;
+    box-shadow: none;
+    width: 96%;
+    padding: 3px;
+    background: transparent;
+}
+#custom-search-input button {
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #96549e;
+    padding: 0 8px 0 10px;
+}
+#custom-search-input button:hover {
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+#custom-search-input .glyphicon-search {
+    font-size: 23px;
+}
+/* =======================================================
+*
+*    Coach Program Styles
+*
+* ======================================================= */
+
+.dexel-coach-navbar {
+    background-color: #e4f2ef;
+    border-color: #e4f2ef;
+}
+.dexel-coach-navbar .navbar-brand {
+    color: #308487;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.dexel-coach-Detailscontainer {
+    background-image: url("../images/sf_coach_dashboard.png");
+}
+.dexel-coach-headerBar {
+    height: 200px;
+    margin-top: 56px;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+.dexel-coach-headerTxt {
+    display: table-cell;
+    vertical-align: bottom;
+    float: none;
+    bottom: 40px;
+}
+.dexel-coach-headerTxt img {
+    margin: 0 auto;
+    display: block;
+    width: 120px;
+    height: 120px;
+}
+.dexel-coach-headerTxt label {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: block;
+}
+.dexel-coach-maincontainer .panel {
+    border-radius: 0;
+    border: none;
+}
+.panel.with-nav-tabs .panel-heading {
+    padding: 12px 5px 0 5px;
+    border-radius: 0;
+    background-color: #02c5c4;
+    border-color: #02c5c4;
+    height: 80px;
+}
+.panel.with-nav-tabs .panel-heading li a {
+    color: #FFF;
+    border-radius: 0;
+    padding: 18px 32px 26px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.panel.with-nav-tabs .panel-heading li a:hover,
+.panel.with-nav-tabs .panel-heading li.active a {
+    color: #2d9c79;
+    background-color: #FFF;
+    border-color: #FFF;
+    font-weight: 400;
+    border-radius: 6px 6px 0 0;
+}
+.panel.with-nav-tabs .nav-tabs {
+    border-bottom: none;
+}
+.panel.with-nav-tabs .nav-justified {
+    margin-bottom: -1px;
+}
+.panel.with-nav-tabs .panel-body {
+    padding: 50px 15px 15px;
+}
+.tab-content-header {
+    color: #2d9c79;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.btn-bs-file {
+    position: relative;
+    color: #FFF !important;
+    width: 100%;
+    text-transform: uppercase;
+    margin: 2% 0 0;
+}
+.btn-bs-file input[type="file"] {
+    position: absolute;
+    top: -9999999;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    width: 0;
+    height: 0;
+    outline: none;
+    cursor: inherit;
+}
+
+/* =======================================================
+*
+*    Audio Card Paenl Styles
+*
+* ======================================================= */
+
+.dexel-audio-maincontainer {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.dexel-audio-maincontainer .audio-flip {
+    margin-bottom: 30px;
+}
+.dexel-audio-card {
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    margin-top: 3em;
+}
+.dexel-audio-card .dexel-audio-imagepanel {
+    position: relative;
+    margin: 30px auto 0;
+    width: 75%;
+}
+.dexel-audio-card .dexel-audio-imagepanel img {
+    width: 100%;
+}
+.dexel-audio-card .postCount {
+    z-index: 1;
+    right: -15%;
+    bottom: 0%;
+    position: absolute;
+}
+.dexel-audio-card .postCount span {
+    display: inline-block;
+    background: #8d27d9;
+    text-align: center;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 50%;
+    border: 3px solid #FFF;
+    padding: 14px;
+}
+.dexel-audio-card .postCount b {
+    display: inline;
+    color: #8d27d9;
+    bottom: -16px;
+    position: relative;
+}
+
+.dexel-audio-card .postCount b img{
+    width: 20px;
+    height: 27px;
+}
+.dexel-audio-Contentpanel {
+    margin-bottom: 3em;
+}
+.dexel-audio-card .dexel-audio-Contentpanel h3 {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin-bottom: 0.8em;
+    margin-top: 1.5em;
+    color: #e09de8;
+    font-weight: 400;
+    max-height: 100px;
+}
+.dexel-audio-card .dexel-audio-Contentpanel p {
+    font-size: 0.9em;
+    line-height: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    color: #979797;
+}
+.dexel-audio-card .dexel-audio-profile img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 15px;
+}
+.dexel-audio-card .dexel-audio-profile img.relax{
+    width:45px;
+    height:28px;
+    margin-bottom: 20px;
+    margin-top: 6px;
+}
+.dexel-audio-card .dexel-audio-profile img.heartin{
+    width:27px;
+    height:25px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.dexel-audio-card .dexel-audio-profile label {
+    font-size: 0.7em;
+    color: #aa8ead;
+    font-weight: 600;
+    float: left;
+    width: 100%;
+}
+.dexel-audio-card .dexel-audio-backpanel {
+    background: #84368d;
+    height: 100%;
+    padding-top: 10%;
+}
+.dexel-audio-card .dexel-audio-list {
+    margin-top: 20%;
+}
+.dexel-audio-card .dexel-audio-list ul {
+    float: left;
+    width: 100%;
+    height: 290px;
+}
+.dexel-audio-card .dexel-audio-list ul li {
+    list-style-type: decimal;
+    list-style-position: inside;
+    width: 100%;
+    color: #FFF;
+    -webkit-transition: all 0.3s linear 0s;
+    -moz-transition: all 0.3s linear 0s;
+    -ms-transition: all 0.3s linear 0s;
+    -o-transition: all 0.3s linear 0s;
+    margin: 8px 0;
+    text-align: left;
+}
+.dexel-audio-card .dexel-audio-list ul li a {
+    -webkit-transition: all 0.3s linear 0s;
+    -moz-transition: all 0.3s linear 0s;
+    -ms-transition: all 0.3s linear 0s;
+    -o-transition: all 0.3s linear 0s;
+    transition: all 0.3s linear;
+    color: #FFF;
+    margin: 0.45em 0;
+    display: inline-block;
+}
+.dexel-audio-card .dexel-audio-list ul li:hover,
+.dexel-audio-card .dexel-audio-list ul li a:hover {
+    color: #ABB7B7;
+    transform: scale(0.98);
+}
+.dexel-audio-card .dexel-audio-grp {
+    padding: 12px;
+    display: inline-block;
+}
+.dexel-audio-playicon {
+    margin-top: 5%;
+}
+.dexel-audio-actionpanel div:nth-child(2) label {
+    color: #df5417;
+}
+.jp-audio *:focus,
+.jp-audio-stream *:focus,
+.jp-video *:focus {
+    /* Disable the browser focus highlighting. */
+
+    outline: none;
+}
+.jp-audio button::-moz-focus-inner,
+.jp-audio-stream button::-moz-focus-inner,
+.jp-video button::-moz-focus-inner {
+    /* Disable the browser CSS3 focus highlighting. */
+
+    border: 0;
+}
+/* @group CONTROLS */
+
+.jp-controls-holder {
+    clear: both;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.jp-interface .jp-controls {
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+.jp-audio .jp-controls {
+    width: 100%;
+}
+.jp-controls button {
+    display: block;
+    overflow: hidden;
+    text-indent: -9999px;
+    border: none;
+    cursor: pointer;
+    margin: 0 auto;
+}
+.jp-play {
+    width: 60px;
+    height: 60px;
+}
+.jp-play {
+    background: url("../images/play.png") 0 0 no-repeat;
+    width: 60px;
+    width: 60px;
+    background-size: 60px 60px;
+}
+.jp-state-playing .jp-play {
+    background: url("../images/pause.png") 0 0px no-repeat;
+    width: 60px;
+    width: 60px;
+    background-size: 60px 60px;
+}
+.jp-playlist-current {
+    color: #3e4242 !important;
+    transform: scale(0.98);
+}
+.jp-playlist li div {
+    display: inline;
+}
+.jp-no-solution {
+    padding: 5px;
+    font-size: .8em;
+    background-color: #eee;
+    border: 2px solid #009be3;
+    color: #000;
+    display: none;
+}
+.jp-no-solution a {
+    color: #000;
+}
+.jp-no-solution span {
+    font-size: 1em;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* =======================================================
+*
+*    Flip Card Styles
+*
+* ======================================================= */
+
+.dexel-flipContainer {
+    -webkit-perspective: 1200;
+    -ms-perspective: 1200;
+    -moz-perspective: 1200;
+    perspective: 1200px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.dexel-flipContainer .dexel-flipcard.flipped {
+    transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+}
+.dexel-flipContainer .dexel-flipcard.nonFlipped {} .dexel-flipContainer .dexel-flipcard {
+    width: 100%;
+    height: 350px;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -o-transition: 1s;
+    transform-style: preserve-3d;
+    transition: 1s;
+}
+.dexel-flipContainer .dexel-flipcard .face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    line-height: 80%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+}
+.dexel-flipContainer .dexel-flipcard .front {
+    position: absolute;
+    z-index: 1;
+    background: #401245;
+}
+.dexel-flipContainer .dexel-flipcard .back {
+    position: absolute;
+    transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+}
+.dexel-flipper {
+    cursor: pointer;
+}
+.dexel-flipper b {
+    display: block;
+    width: 100%;
+    text-align: right;
+    color: #FFF;
+}
+
+.dexel-addplaylist-audiocard span.freebadge{
+    background-color: #2bbf89;
+    padding: 0% 4%;
+    border-radius: 0 0 4px 4px;
+    color: #FFF;
+    font-size: 18px;
+    margin: -1px 5px 0px 0px;
+}
+
+#musicaddbutton,
+#courseaddbutton {
+    width: 65%;
+    background-color: #2d9c79;
+    border: 1px solid #2d9c79;
+    text-transform: uppercase;
+    color: #FFF;
+    font-weight: 500;
+    margin-top: 1%;
+    -webkit-transition: all 0.3s linear 0s;
+    -moz-transition: all 0.3s linear 0s;
+    -ms-transition: all 0.3s linear 0s;
+    -o-transition: all 0.3s linear 0s;
+    transition: all 0.3s linear 0s;
+}
+#musicaddbutton {
+    margin-top: 50%;
+}
+#musicaddbutton:hover,
+#courseaddbutton:hover {
+    background-color: #FFF;
+    color: #2d9c79;
+}
+.dexel-coursePanel-header {
+    margin: 4% 0 4%;
+}
+.dexel-coursePanel-header label {
+    color: #2d9c79;
+    font-size: 24px;
+    font-weight: 400;
+    width: 100%;
+}
+.dexel-coursecard {
+    width: 100%;
+    background-image: -ms-linear-gradient(top, #27AC82 0%, #13535f 100%);
+    background-image: -moz-linear-gradient(top, #27AC82 0%, #13535f 100%);
+    background-image: -o-linear-gradient(top, #27AC82 0%, #13535f 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #27AC82), color-stop(100, #13535f));
+    background-image: -webkit-linear-gradient(top, #27AC82 0%, #13535f 100%);
+    background-image: linear-gradient(to bottom, #27AC82 0%, #13535f 100%);
+    box-shadow: 2px 4px 6px #585555;
+    float: left;
+}
+.dexel-coursecard label {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 500;
+    width: 55%;
+    margin: 3% 3%;
+    float: left;
+}
+.course-credit {
+    color: #FFF;
+    background: url(../images/sf_add_program_free.png) no-repeat;
+    width: 35%;
+    height: 50px;
+    float: left;
+    background-size: 100%;
+}
+.course-credit span {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 46px;
+}
+.dexel-coursecard p {
+    float: left;
+    width: 100%;
+    text-align: left;
+    padding: 2% 3%;
+    line-height: 18px;
+    color: #FFF;
+    font-size: 16px;
+}
+.course-duration-details label {
+    color: #FFF;
+    font-size: 16px;
+    width: 40%;
+    float: left;
+    display: table;
+    vertical-align: middle;
+    text-align: left;
+    line-height: 50px;
+}
+.course-duration-details label span {
+    color: #FFF;
+    border-radius: 50%;
+    background: #0d544a;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 500;
+    height: 50px;
+    width: 50px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.course-actionPanel {
+    padding: 2% 0;
+    background: #135d66;
+    display: inline-block;
+    width: 100%;
+    float: left;
+}
+.course-actionPanel label {
+    width: 25%;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.course-actionPanel label span {
+    border-radius: 50%;
+    padding: 2% 10%;
+    background: #0d544a;
+    margin: 0 6% 0 0;
+}
+
+
+.dynamicTile .col-sm-2.col-xs-4,
+.dynamicTile .col-sm-4.col-xs-4,
+.dynamicTile .col-sm-4.col-xs-8,
+.dynamicTile .col-sm-6.col-xs-12{
+    padding:5px;
+}
+
+.tile-Numbers div:nth-child(odd){
+    margin-right: 10px;
+}
+.title-small{
+    width:48.6%;
+    float:left;
+    margin:5px 0;
+}
+
+.title-mid-large{
+    width:100%;
+    float:left;
+}
+.title-large{
+    float:left;
+    width:100%;
+    margin:5px 0;
+    height:90% !important;
+}
+
+.tile-orange{
+    background: #f39233;
+    color:#FFF;
+
+}
+
+.tile-yellow{
+    background: #f1e189;
+    color:#308487;
+}
+
+.tile-green{
+    background: #b8de6d;
+    color:#308487;
+}
+
+.tile-grey{
+    background: #666666;
+    color:#FFF;
+}
+
+.tile-blue{
+    background:#01c5c4;
+}
+
+.title-small label{
+    float:left;
+    width:90%;
+    text-align:center;
+    font-size: 4em;
+    font-weight: 500;
+    margin: 14px 0 20px;
+}
+
+.title-small p{
+    float:left;
+    width:90%;
+    font-size:14px;
+    text-align:left;
+    margin-left:12px;
+    text-transform: uppercase;
+}
+
+.title-small span{
+    float:left;
+    width:90%;
+    font-size:11px;
+    text-align:left;
+    margin-left:12px;
+    text-transform: uppercase;
+}
+
+.Img-Cnt{
+    padding:26px;
+}
+
+.Img-Cnt h3{
+    color:#FFF;
+    text-align:left;
+    margin:0 0 0px 0;
+    text-transform: uppercase;
+}
+
+.Img-Cnt h6{
+    color:#FFF;
+    text-align:left;
+    text-transform: capitalize;
+    font-size:13px;
+    margin:0 0 0px 0;
+}
+
+.Img-Cnt img{
+    margin:14px 0px 10px;
+    height: 140px;
+    width: 100%;
+}
+
+.Img-Cnt p{
+    color:#FFF;
+    text-align:left;
+    font-size:14px;
+    font-weight: 300;
+    width: 95%;
+    height: 10em;
+    overflow: hidden;
+}
+
+.Img-Cnt label{
+    float:left;
+    color:#FFF;
+    font-size:16px;
+    margin:2% 6% 1% 0;
+}
+
+.Img-Cnt label b{
+    margin:0 6px 0 0;
+}
+
+.img-details
+{
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    bottom: 0;
+    height: 30%;
+    width:100%;
+}
+
+.img-details label{
+    text-align: right;
+    color:#FFF;
+    font-size:14px;
+    width:85%;
+    float:left;
+    margin:12px 0 0;
+}
+
+.img-details span{
+    text-align: right;
+    color:#FFF;
+    font-size:12px;
+    width:85%;
+    float:left;
+    margin:0;
+}
+
+.dynamicTile img{
+    width:100%;
+    height:100%;
+}
+ .carousel-inner > .item > img, .carousel-inner > .item > a > img{
+    height: 100%;
+}
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+
+/* =======================================================
+*
+*    Video Card Panel Styles
+*
+* ======================================================= */
+.dexel-video-innerpanel{
+    margin-top:50px;
+}
+.dexel-video-maincontainer {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.video-card {
+    background: #1193ab;
+    border: 1px solid #1193ab;
+    border-radius: 4px;
+    padding: 12px 0 6px;
+    margin-bottom: 40px;
+}
+.video-card .img-Panel img {
+    width: 100%;
+    height: 196px;
+}
+.video-card .content-Panel {
+    padding: 0px 14px;
+}
+.video-card .content-Panel h3 {
+    color: #FFF;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.video-card .content-Panel p {
+    color: #FFF;
+    margin: 6px 0;
+    font-size: 0.8125em;
+}
+.video-card .action-Panel {
+    margin-top: 30px;
+    width: 100%;
+}
+.video-card .action-Panel label {
+    color: #FFF;
+    font-size: 0.8125em;
+    width: 100%;
+}
+.video-card .action-Panel label span {
+    background: #FFF;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    top: 2px;
+    right: 6px;
+    position: relative;
+}
+
+.dexel-coach-describeHeader{
+    background:rgba(0,0,0,0.25);
+    width:100%;
+    margin-top: 7px;
+    padding:1%;
+    z-index: 9;
+    position: relative;
+}
+.dexel-coach-describeHeader img{
+    width:60px;
+    height:60px;
+    float:left;
+    margin-left:12px;
+}
+.dexel-coach-describeHeader label{
+    color: #FFF;
+    font-weight: 400;
+    font-size:18px;
+    margin-top: 18px;
+    margin-left: 16px;
+}
+
+.dexel-inner-videoCntpanel {
+    margin-top: 50px;
+}
+.dexel-inner-videoCntpanel h1 {
+    font-weight: 600;
+    color: #3d3d3d;
+    font-size: 28px;
+}
+.dexel-inner-videoCntHeader label {
+    font-size: 0.8125em;
+    float: left;
+    line-height: 32px;
+    vertical-align: middle;
+    position: relative;
+    background: rgba(0,0,0,0.3);
+    padding: 0% 12% 0% 0;
+    border-radius: 22px;
+    color: #FFF;
+    text-align: center;
+    display: inline-block;
+    margin: 0 2%;
+
+}
+.dexel-inner-videoCntHeader label span {
+    display: inline-block;
+    background: #21dc98;
+    color: #FFF;
+    border-radius: 50%;
+    padding: 1%;
+    font-size: 8px;
+    width: 32px;
+    height: 32px;
+    float: left;
+    line-height: 32px;
+    text-align: center;
+    top: 0px;
+    position: relative;
+    right: 4px;
+}
+.dexel-inner-videoCnt {
+    margin-top: 30px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #CCC;
+}
+.dexel-inner-videoCnt p {
+    color: #3d3d3d;
+    font-size: 1em;
+}
+.dexel-feature-videoCnt {
+    margin-top: 30px;
+}
+.dexel-feature-videoCnt label {
+    text-transform: uppercase;
+    color: #3d3d3d;
+    font-size: 1.5em;
+    margin: 0 0 0px;
+}
+.dexel-feature-videoCnt .dexel-feature-videoCntHeader {
+    margin-bottom: 20px;
+}
+
+.dexel-feature-videoCntHeader label{
+    float:left;
+    background: transparent;
+}
+.video-Badge {
+    background:url(../images/sf_video_view_badge.png) no-repeat;
+    width: 50px;
+    height: 62px;
+    right: 5%;
+    top: -1.6%;
+    position: absolute;
+}
+
+/* =======================================================
+*
+*    Customer Page Styles
+*
+* ======================================================= */
+.dexel-customerContainer{
+    margin-top: 55px;
+}
+
+.dexel-customer-Bannerconatiner{
+    background:url(../images/banner1.jpg) no-repeat;
+    width:100%;
+    height:250px;
+    background-size: 100% 100%;
+    background-position: center 1%;
+}
+
+.dexel-customer-Bannerconatiner h3{
+    color:#12445c;
+    margin-top: 1.6em;
+    font-size: 1.1em;
+    font-weight: 500;
+
+}
+
+.dexel-customer-Bannerconatiner p{
+    color:#133443;
+    font-size: 0.9em;
+    line-height: 20px
+}
+
+.dexel-customer-actionPanel{
+    background:#262626;
+    padding:1em 0;
+    display: inline-block;
+    height: auto;
+    float: left;
+    width: 100%;
+}
+
+.dexel-customer-actionPanel #custom-search-input,
+.dexel-customer-actionPanel .btn-collection{
+    border: 1px solid #FFF ;
+    color:#FFF ;
+}
+.dexel-customer-actionPanel #custom-search-input input,
+.dexel-customer-actionPanel #custom-search-input button{
+    color:#FFF;
+    outline:none;
+}
+
+.dexel-customer-Selection{
+    width:100%;
+    height:160px;
+    background:#CCC;
+}
+
+.dexel-customer-Selection ul{
+    width:80%;
+    margin:0 auto;
+}
+.dexel-customer-Selection ul li{
+    height:100%;
+    margin:0;
+    padding:0;
+}
+.dexel-customer-Selection ul li a{
+    color:#FFF;
+    -webkit-transition: all 0.3s linear 0s;
+            transition: all 0.3s linear 0s;
+
+}
+.dexel-customer-Selection ul li a span{
+    border-radius:50%;
+    width:80px;
+    height:80px;
+    background:#443324;
+    display: inline-block;
+    margin: 12px 0;
+}
+.dexel-customer-Selection ul li a label{
+    display: block;
+    width:100%;
+    margin:1px 0 10px;
+    line-height: 18px;
+}
+.dexel-customer-Selection ul li a:hover
+{
+    background:#cd7239;
+}
+.dexel-customer-Selection ul li a:hover span
+{
+    background:#884c26;
+}
+
+.dexel-customer-Selection ul li.active a{
+    background:#cd7239;
+}
+.dexel-customer-Selection ul li.active a span{
+    background:#884c26;
+}
+
+.dexel-articlePanel .dexel-articleImg img{
+    width:100%;
+    height:198px;
+    border:1px solid #CCC;
+    padding:1%;
+}
+
+.dexel-customer-cntContainer{
+    padding-top:6%;
+    padding-bottom:6%;
+}
+
+.dexel-customer-cntContainer .dexel-articlePanel{
+    width:90%;
+    margin: 0 0 16%;
+    float: left;
+}
+.dexel-articlePanel .dexel-Imgtxt{
+    width:100%;
+    float:left;
+}
+.dexel-articlePanel .dexel-Imgtxt label{
+    width:50%;
+    color:#6c6c6c;
+    font-size:14px;
+    text-transform: capitalize;
+}
+
+.dexel-articlePanel .dexel-articleCnt{
+    width:100%;
+    float:left;
+    margin-top:12px;
+}
+
+.dexel-articlePanel .dexel-articleCnt h2{
+    color:#4d4d4d;
+    border-bottom:1px solid #ccc;
+    padding-bottom:4px;
+    font-size:18px;
+    text-align:left;
+    margin:0;
+}
+
+.dexel-articlePanel .dexel-articleCnt p{
+    color:#4d4d4d;
+    padding:6px 0;
+    font-size:14px;
+    text-align:left;
+    line-height:22px;
+}
+
+.dexel-articlePanel .dexel-articletxt{
+    width:100%;
+    float:left;
+    margin-top:6px;
+}
+.dexel-articlePanel .dexel-articletxt label{
+    width:50%;
+    color:#6c6c6c;
+    font-size:14px;
+    text-transform: capitalize;
+}
+
+.dexel-articlePanel .video-Badge {
+    background: url(../images/sf_video_view_badge.png) no-repeat;
+    width: 50px;
+    height: 62px;
+    right: 16%;
+    top: -1.5%;
+    position: absolute;
+}
+
+
+.dexel-customer-audiocard{
+    margin:1.3% 0;
+}
+
+
+
+.dexel-coach-DashboardContainer{
+    margin-top:50px;
+}
+.dexel-coach-describeBanner{
+    background:url('../images/coach-banner.jpg') no-repeat;
+    width:100%;
+    height:700px;
+    padding:0;
+}
+
+.dexel-coach-describeHeader{
+    background:rgba(0,0,0,0.25);
+    width:100%;
+    margin-top: 7px;
+    padding:1%;
+}
+.dexel-coach-describeHeader img{
+    width:60px;
+    height:60px;
+    float:left;
+    margin-left:12px;
+}
+.dexel-coach-describeHeader label{
+    color: #FFF;
+    font-weight: 400;
+    font-size:18px;
+    margin-top: 18px;
+    margin-left: 16px;
+}
+
+
+.dexel-coachPanel{
+    margin-top:6%;
+}
+.dexel-coachPanel h1{
+    color:#FFF;
+    font-size:2.8em;
+    font-weight:400;
+    margin:0;
+}
+.dexel-coachPanel h5{
+    color:#FFF;
+    font-size:1.2em;
+    font-weight:400;
+    margin-bottom: 8px;
+}
+
+.dexel-coach-circleCount{
+    float:left;
+    margin-top:-20px;
+    margin-left: 50px;
+}
+.dexel-coach-circleCount label{
+    color:#FFF;
+    width:75px;
+    height:67px;
+    line-height:67px;
+    border-radius:50%;
+}
+
+.dexel-coach-circleCount span{
+    color:#FFF;
+    font-size:18px;
+    font-weight:500;
+    width:100%;
+}
+
+.dexel-coach-SpecialPanel{
+    margin-top: 1%;
+    float: left;
+    margin-left: 50px;
+    width: 90%;
+}
+
+.dexel-coach-SpecialPanel label{
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 400;
+    text-align:left;
+    width: 50%;
+    text-indent: 15px;
+}
+
+.dexel-coach-SpecialPanel ul{
+    margin:2% 0 0;
+    padding:0;
+    list-style-type: none
+}
+.dexel-coach-SpecialPanel ul li{
+    background:rgba(0,0,0,0.3);
+    padding:0% 6% 0% 0;
+    border-radius:22px;
+    color:#FFF;
+    text-align:center;
+    display:inline-block;
+    line-height: 36px;
+    margin:0 2%;
+}
+
+.dexel-coach-SpecialPanel ul li span{
+    background: #21dc98;
+    color: #FFF;
+    border-radius: 50%;
+    padding: 1%;
+    font-size: 10px;
+    width: 38px;
+    height: 38px;
+    float: left;
+    line-height: 32px;
+    text-align: center;
+    top: 0px;
+    position: relative;
+    right:4px;
+}
+
+.themeBar-Panel{
+    width:20px;
+    float: right;
+}
+.themeBar-Panel a{
+    width: 100%;
+    height: 20px;
+    border-bottom: 2px solid #FFF;
+    float: right;
+}
+.themeBar-Panel a:last-child{
+    border-bottom: none;
+    }
+
+
+.dexel-Program-Cnt{
+    width:100%;
+    margin-top: 2%;
+}
+.dexel-Program-Cnt label{
+    color:#FFF;
+    width:100%;
+    font-weight:600;
+    font-size:18px;
+    margin:2% 0 1%;
+}
+.dexel-Program-Cnt p{
+    color:#FFF;
+    width:90%;
+}
+
+.dexel-Progressbtn{
+    margin-top:4%;
+}
+.dexel-Progressbtn a
+{
+    background:#01c5c4;
+    padding:12px 32px;
+    color:#FFF;
+    border:1px solid #77f0ef;
+    border-radius:4px;
+}
+.dexel-customer-ProgramContainer{
+    margin-top:2%;
+}
+
+
+/************************************
+         Progess bar Tile Style
+**************************************/
+
+.dexel-customer-ProgressPanel{
+    background:#3f3f3f;
+    border-left:4px solid #01c5c4;
+    margin-bottom:8px;
+}
+
+.dexel-customer-ProgressPanel label{
+    width:75%;
+    color:#FFF;
+    font-size:20px;
+    font-weight:400;
+    float:left;
+    margin-left:1%;
+}
+
+.dexel-customer-ProgressPanel span{
+    width: 15%;
+    color: #01c5c4;
+    font-size: 20px;
+    margin-right: 1%;
+    margin-top: 8px;
+}
+
+.dexel-customer-ProgessBar{
+    margin:6% auto 3%;
+    width:98%;
+}
+
+.progress.dexel-customer-ProgessBar{
+    background:#1d1d1d;
+    height:10px;
+}
+.progress.dexel-customer-ProgessBar .progress-bar{
+    background-color:#01c5c4;
+    border-radius: 10px;
+    -webkit-animation: progress 5s 1 forwards;
+    -moz-animation: progress 5s 1 forwards;
+    -ms-animation: progress 5s 1 forwards;
+    animation: progress 5s 1 forwards;
+}
+
+.dexel-Program-tiles{
+    background:#f2f2f2;
+    border-left:8px solid #01c5c4;
+    margin-bottom:4px;
+    padding:1%;
+}
+
+.dexel-Program-tiles .dexel-Program-tilesCnt{
+    width:80%;
+    float: left;
+}
+
+.day-Mention{
+    color:#01c5c4;
+    font-size:20px;
+    width:100%;
+    margin-left:1%;
+    margin-top: -5px;
+}
+
+.session-Mention{
+    color:#01c5c4;
+    font-size:16px;
+}
+
+.task-Mention{
+    color:#01c5c4;
+    font-size:21px;
+    width:100%;
+    margin-left:1%;
+    margin-top:3%;
+    font-weight:400
+}
+
+.task-session-Mention{
+    color:#3c3c3c;
+    font-size:20px;
+    width:100%;
+    margin-top:3%;
+    font-weight:400;
+}
+
+.dexel-Program-tilesActionpanel{
+    width:15%;
+}
+
+.dexel-Program-tilesActionpanel button{
+    background:#a9a9a9;
+    padding:4px 16px;
+    color:#FFF;
+    border:1px solid transparent;
+    cursor:button;
+    margin-top:12%;
+}
+
+.dexel-Program-tilesActionpanel button.active{
+    background:#01c5c4;
+    -webkit-transition: all 0.3s linear 0s;
+            transition: all 0.3s linear 0s;
+}
+/* =======================================================
+*
+*    Coach Page Styles
+*
+* ======================================================= */
+
+.dexel-customercoach-Container{
+    padding-top:3%;
+    padding-bottom:6%;
+}
+.dexel-coachImgcontainer{
+    background: url('../images/coaches.png') no-repeat center;
+    width: 100%;
+    height: 240px;
+    background-size: 85% 90%;
+    margin:5% auto;
+}
+
+.dexel-coachImgcontainer a
+{
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+.dexel-coachImgcontainer a img{
+    width: 43%;
+    height: 60.22%;
+    margin: 18px -3% 0 0px;
+    border-radius: 50%;
+    text-align: center;
+}
+.dexel-coachImgcontainer label{
+    float: left;
+    width: 80%;
+    margin-left: 11%;
+    color: #0000;
+    margin-top: 2px;
+    text-align: center;
+}
+
+.dexel-coachImgcontainer span {
+    display: none;
+    background: #38c861;
+    text-align: center;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 50%;
+    border: 3px solid #FFF;
+    padding: 4px 8px;
+    position: absolute;
+    top: 45%;
+    right: 32%;
+}
+/* =======================================================
+*
+*    Go to top of the Page Styles
+*
+* ======================================================= */
+
+.gototop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.gototop.active {
+    opacity: 1;
+    visibility: visible;
+}
+.gototop a {
+    width: 50px;
+    height: 50px;
+    display: table;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+}
+.gototop a i {
+    height: 50px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.gototop a:hover,
+.gototop a:active,
+.gototop a:focus {
+    text-decoration: none;
+    outline: none;
+}
+.js .animate-box {
+    opacity: 0;
+}
+
+@-webkit-keyframes progress {
+    from { }
+
+    to { width: 20% }
+}
+
+@-moz-keyframes progress {
+    from { }
+
+    to { width: 20% }
+}
+
+@-ms-keyframes progress {
+    from { }
+
+    to { width: 20% }
+}
+
+@keyframes progress {
+    from { }
+
+    to { width: 20% }
+}
+
+.small-dropdown{
+    margin-top:8%;
+}
+@media screen and ( min-width:768px) and (max-width:909px){
+
+    .dexel-coursecard label{
+        font-size:16px;
+    }
+    .dexel-coursecard p{
+        font-size:14px;
+    }
+
+    .course-duration-details label{
+        font-size:14px;
+    }
+
+    .course-actionPanel label{
+        font-size:12px;
+        width:33%;
+        margin:3% 0;
+    }
+    .title-small{
+        width:45%;
+    }
+    .title-small label{
+        margin: 8px 0 4px;
+    }
+
+    .dexel-customer-maincontainer{
+        margin-top:10%;
+    }
+    .tile-Numbers{
+        padding:0 0 0 8px;
+    }
+    .dexel-customer-Selection ul{
+        width:100%;
+    }
+
+    .dexel-customer-Selection ul li a label{
+        font-size:11px;
+    }
+
+    .small-dropdown{
+        margin-top:18%;
+    }
+
+    .mobile-row{
+        padding-left:2%;
+    }
+    .dexel-Progressbtn{
+        margin-top:20%;
+    }
+    .dexel-coach-circleCount{
+        margin-top:6%;
+    }
+}
+
+#my-video{
+	width:100% !important;
+	height:600px !important;
+}
+
+
+/*sabrina*/
+    /*Remove rounded coners*/
+
+    nav.sidebar.navbar {
+        border-radius: 0px;
+    }
+
+
+
+    /* .....NavBar: Icon only with coloring/layout.....*/
+
+    /*small/medium side display*/
+    @media (min-width: 768px) {
+        .subpage-menu{
+            background:url('../images/sf_coach_profile_menu_bg.png') repeat-x;
+        }
+
+        /*lets nav bar to be showed on mouseover*/
+        nav.sidebar:hover + .main{
+            margin-left: 200px;
+        }
+
+        /*Center Brand*/
+        nav.sidebar.navbar.sidebar>.container .navbar-brand,
+        nav.sidebar.navbar.sidebar>.container-fluid .navbar-brand {
+           margin-left: 52px;
+            transform: scale(0.65);
+        }
+
+        /*Center Brand*/
+        nav.sidebar .navbar-brand, nav.sidebar .navbar-header{
+            text-align: center;
+            width: 100%;
+            margin-left: 0px;
+        }
+
+        nav.sidebar .navbar-brand{
+            height:90px;
+        }
+        nav.sidebar .navbar-brand img{
+            line-height: 90px;
+            vertical-align:middle;
+            position: relative;
+            text-align:center;
+            margin:0 auto;
+        }
+
+        /*Center Icons*/
+        nav.sidebar a{
+            padding-right: 6px;
+        }
+
+        nav.sidebar a:hover{
+            background-color: #8bcfc3;
+        }
+
+        /*adds border top to first nav box */
+        nav.sidebar .navbar-nav > li:first-child{
+            /*border-top: 1px #e5e5e5 solid;*/
+                margin-top: 1px;
+                padding: 0
+        }
+
+        /*adds border to bottom nav boxes*/
+        nav.sidebar .navbar-nav > li{
+            /*border-bottom: 1px #afa747 solid;*/
+            padding: 2% 0;
+        }
+
+        /* Colors/style dropdown box*/
+        nav.sidebar .navbar-nav .open .dropdown-menu {
+            position: static;
+            float: none;
+            width: auto;
+            margin-top: 0;
+            background-color: transparent;
+            border: 0;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        /*allows nav box to use 100% width*/
+        nav.sidebar .navbar-collapse, nav.sidebar .container-fluid{
+            padding: 0 0px 0 0px;
+        }
+
+        /*gives sidebar width/height*/
+        nav.sidebar{
+            width: 150px;
+            height: 100%;
+            margin-left: -110px;
+            float: left;
+            z-index: 8000;
+            margin-bottom: 0px;
+        }
+
+        /*give sidebar 100% width;*/
+        nav.sidebar li {
+            width: 100%;
+        }
+
+        /* Move nav to full on mouse over*/
+        nav.sidebar:hover{
+            margin-left: 0px;
+        }
+
+        /*for hiden things when navbar hidden*/
+        .forAnimate{
+            opacity: 0;
+        }
+
+        .dexel-menu-dashboard{
+            background:url('../images/sf_coach_profile_icon_01.png') no-repeat;
+            width:27px;
+            height:25px;
+            background-size: 80%;
+            margin-right: -3px;
+        }
+        .dexel-menu-audio{
+            background:url('../images/sf_coach_profile_icon_02.png') no-repeat;
+            width:25px;
+            height:35px;
+            background-size: 80%;
+        }
+        .dexel-menu-document{
+            background:url('../images/sf_coach_profile_icon_03.png') no-repeat;
+            width:25px;
+            height:31px;
+            background-size: 80%;
+        }
+        .dexel-menu-yoga{
+            background:url('../images/sf_coach_profile_icon_04.png') no-repeat;
+            width:25px;
+            height:49px;
+            background-size: 80%;
+            margin-top: -10px;
+        }
+        .dexel-menu-user{
+            background:url('../images/sf_coach_profile_icon_05.png') no-repeat;
+            width:36px;
+            height:36px;
+            background-size: 80%;
+        }
+        .dexel-menu-settings{
+            background:url('../images/sf_coach_profile_icon_06.png') no-repeat;
+            width:33px;
+            height:33px;
+            background-size: 80%;
+        }
+
+        .dexel-menu-separate{
+            margin-top:18% !important;
+        }
+    }
+
+    .dexel-coach-navbar .navbar-brand{
+        line-height: 50px;
+        height: 90px;
+    }
+
+    .header-brand{
+        margin-left: 25px !important;
+    }
+
+    .dexel-menu-separate a{
+        padding-right: 0px !important;
+    }
+
+
+    @media (max-width: 575px){
+    .mobile-align{
+        margin:2% 0;
+    }
+
+    .footer-top {
+        height:200px;
+    }
+
+    .footer-Content-label {
+        line-height: 16px;
+        margin-top: 35px;
+    }
+
+    .social-panel{
+        width:90%;
+    }
+
+    .social-panel li{
+        display:block;
+    }
+    .social-panel li a {
+        padding: 6px;
+        display: block;
+        font-size: 0.6em;
+        margin: 8px 5px;
+        width: 30px;
+        height: 30px;
+        float:left;
+    }
+
+    .course-duration-details label span{
+        border-radius: 8px;
+        padding: 4%;
+        display: inline;
+    }
+
+    .dexel-coach-describeBanner{
+        background-size:cover;
+    }
+    .dexel-coach-describeHeader img{
+        margin-left: 4%;
+    }
+
+}
+
+@media only screen and (max-device-width: 667px)
+    and (-webkit-device-pixel-ratio: 2) {
+        .dexel-audio-card .postCount{
+            right: -6%;
+            bottom: 0%;
+            }
+    }
+
+    @media screen and (min-device-width : 414px)
+    and (-webkit-device-pixel-ratio: 3){
+
+            .dexel-audio-card .postCount{
+                right: -6%;
+                bottom: 0%;
+            }
+    }

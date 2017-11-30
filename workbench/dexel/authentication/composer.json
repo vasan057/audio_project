@@ -1,0 +1,26 @@
+{
+    "name": "dexel/authentication",
+    "description": "",
+    "authors": [
+        {
+            "name": "Manikandan R",
+            "email": "mani@dexeldesigns.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "illuminate/support": "5.4.*",
+        "laravel/socialite": "^3.0",
+        "greggilbert/recaptcha": "dev-master",
+        "tymon/jwt-auth": "^0.5.12"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-4": {
+            "Dexel\\Authentication\\": "src/Dexel/Authentication"
+        }
+    },
+    "minimum-stability": "stable"
+}

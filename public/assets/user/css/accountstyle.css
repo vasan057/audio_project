@@ -1,0 +1,1042 @@
+@font-face {
+    font-family: 'Optim';
+    src: url('../fonts/optim/Optim.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* =======================================================
+*
+*   Reset Styles
+*
+* ======================================================= */
+*{margin:0;padding:0}a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;font-size:100%;vertical-align:baseline}ol,ul{list-style:none}table{border-collapse:collapse;border-spacing:0}caption,td,th{text-align:left;font-weight:400;vertical-align:middle}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}a img{border:none}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}html{font-size:112.5%;line-height:1.33333em;overflow-y:auto;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;background-color:#fff}a,body,button,html,input{outline:0}body{text-align:center;overflow-x:hidden}a{-webkit-transition:.5s;-o-transition:.5s;transition:.5s}a:active,a:focus,a:hover{outline:0;text-decoration:none}input:focus{border-color:transparent}figure,h1,h2,h3,h4,h5,h6{color:#000;font-weight:400;margin:0 0 20px}::-webkit-selection{color:#fff;background:#F36363}::-moz-selection{color:#fff;background:#F36363}::selection{color:#fff;background:#F36363}
+/* =======================================================
+*
+*   Template Style
+*
+* ======================================================= */
+
+body {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #828282;
+    background: #fff;
+    /*  font-family: 'Optim';*/
+
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+}
+#page {
+    position: relative;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.dexel-customerApp-maincontainer {
+    margin-top: 4%;
+}
+
+.dexel-customerApp-maincontainer .panel-primary {
+    border: 1px solid transparent;
+}
+.dexel-customerApp-maincontainer .customer-collection-card {
+    margin: 12px 0;
+}
+
+/* =======================================================
+*
+*    Customer Search Styles
+*
+* ======================================================= */
+
+.dexel-customerApp-maincontainer #custom-search-input {
+    padding: 0 3px;
+    border: solid 1px #96549e;
+    border-radius: 6px;
+    background-color: transparent;
+    border-radius: 30px;
+}
+.dexel-customerApp-maincontainer #custom-search-input input {
+    border: 0;
+    box-shadow: none;
+    width: 96%;
+    padding: 3px;
+    background: transparent;
+}
+.dexel-customerApp-maincontainer #custom-search-input button {
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #96549e;
+    padding: 0 8px 0 10px;
+}
+.dexel-customerApp-maincontainer #custom-search-input button:hover {
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+.dexel-customerApp-maincontainer #custom-search-input .glyphicon-search {
+    font-size: 23px;
+}
+
+.dexel-creditsCountpanel{
+    position: relative;
+}
+.dexel-creditsCountpanel label{
+    background: #4a6161;
+    padding: 3% 16% 3% 24%;
+    border-radius: 6px;
+    color: #FFF;
+    text-align: center;
+    display: inline-block;
+    line-height: 36px;
+    margin: 0 2%;
+    font-size:24px;
+}
+.dexel-creditsCountpanel span
+{
+    background: #02c5c4;
+    border-radius: 50%;
+    padding: 1%;
+    width: 70px;
+    height: 70px;
+    float: left;
+    line-height: 32px;
+    text-align: center;
+    top: 16%;
+    position: absolute;
+    left:5%;
+}
+.dot {
+  border: 10px solid #02c5c4;
+  background: transparent;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+  height: 90px;
+  width: 90px;
+  -webkit-animation: pulse 3s ease-out infinite;
+  -moz-animation: pulse 3s ease-out infinite;
+  animation: pulse 3s ease-out infinite;
+  position: absolute;
+  top: 2%;
+  left: 1%;
+  z-index: 1;
+  opacity: 0;
+}
+
+.dexel-creditCardcontainer{
+    margin-top:6%;
+    border-top:1px solid #CCC;
+}
+
+.dexel-creditCardcontainer label{
+    color:#02c5c4;
+    font-size:20px;
+    font-weight:500;
+    width:75%;
+    text-transform: uppercase;
+    margin-top:2%;
+}
+
+.dexel-creditCardcontainer span{
+    color:#848484;
+    font-size:16px;
+    margin-top:1%;
+    float:left;
+}
+
+.dexel-creditCardPanel{
+    margin-top:4%;
+}
+
+.dexel-creditCardcontainer .creditCard-1{
+    background:url("../images/card-1.png") no-repeat;
+    width: 100%;
+    height: 300px;
+    background-size: 100% 100%;
+    margin:3% 0;
+}
+.dexel-creditCardcontainer .creditCard-2{
+    background:url("../images/card-2.png") no-repeat;
+    width: 100%;
+    height: 300px;
+    background-size: 100% 100%;
+    margin:3% 0;
+}
+.dexel-creditCardcontainer .creditCard-3{
+    background:url("../images/card-3.png") no-repeat;
+    width: 100%;
+    height: 300px;
+    background-size: 100% 100%;
+    margin:3% 0 0;
+}
+.dexel-creditCardcontainer .creditCard-4{
+    background:url("../images/card-4.png") no-repeat;
+    width: 100%;
+    height: 300px;
+    background-size: 100% 100%;
+    margin:3% 0;
+}
+
+.dexel-creditCard{
+    padding: 4% 4% 4% 8%;
+    -webkit-transition: all 0.3s linear 0s;
+            transition: all 0.3s linear 0s;
+}
+
+.dexel-creditCard .dexel-creditCardheader{
+    float:left;
+    width:100%;
+    margin-bottom:12%;
+}
+
+.dexel-creditCard .dexel-creditCardheader h2{
+    width:70%;
+    color:#FFF;
+    text-align:left;
+    font-size: 24px;
+    font-weight: 400;
+    float:left;
+    margin:0;
+}
+
+.dexel-creditCard .dexel-creditCardheader h4{
+    float:left;
+    width:30%;
+    color:#FFF;
+    text-align:right;
+    font-size: 20px;
+    font-weight: 400;
+    margin:0;
+}
+
+.dexel-creditCard .imgContent{
+    width: 120px;
+    height: 120px;
+    border-radius:50%;
+    background-color:rgba(0,0,0,0.5);
+    float: left;
+    margin:0;
+}
+
+.dexel-creditCard label{
+    color:#FFF;
+    font-weight: 400;
+    margin: 8% 4% 0 0;
+    width:50%;
+}
+
+.dexel-creditCard label span{
+    color:#FFF;
+    float:none;
+    font-size:32px;
+    margin:0 10px 0 0;
+}
+
+.dexel-creditCard:hover{
+    cursor: pointer;
+    transform: translateY(-6px);
+}
+
+.dexel-creditCard:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    top: 96%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    transition-duration: 0.3s;
+    transition-property: transform opacity;
+}
+
+
+.dexel-creditCard:hover:before {
+    opacity: .8;
+    transform: translateY(6px);
+}
+
+.popular-tags{
+    background:#3ec0e1;
+    color:#FFF;
+    padding:2% 8%;
+    border-radius:0 0 6px 6px;
+    width:48%;
+    position: relative;
+    margin: 0 6%;
+}
+
+
+/* =======================================================
+*
+*    Payment Page Styles
+*
+* ======================================================= */
+.dexel-Paymentpanel{
+    border-top:1px solid #CCC;
+    margin-top:2%;
+}
+
+.dexel-Paymentheader{
+    margin-top:2%;
+}
+
+.dexel-Paymentheader label {
+    color: #02c5c4;
+    font-size: 20px;
+    font-weight: 500;
+    width:100%;
+    text-transform: uppercase;
+}
+
+.dexel-Paymentheader a{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:#2cb5ce;
+    margin:0 3%;
+    display: inline-block;
+}
+
+.dexel-PaymentBuy{
+    background:#323232;
+    padding:2% 2% 4%;
+    border-radius:8px 8px 0 0;
+    margin-top:2%;
+    float: left;
+    width: 100%;
+}
+.dexel-PaymentBuy label
+{
+    color: #02c5c4;
+    font-size: 20px;
+    font-weight: 400;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.BuycreditCard{
+    background:url("../images/card-4.png") no-repeat;
+    width: 100%;
+    height: 180px;
+    background-size: 100% 100%;
+    margin:3% 0;
+    padding: 4% 4% 4% 8%;
+}
+
+.BuycreditCard h2{
+    width:70%;
+    color:#FFF;
+    text-align:left;
+    font-size: 22px;
+    font-weight: 400;
+    float:left;
+    margin:0;
+}
+
+.BuycreditCard h4{
+    float:left;
+    width:30%;
+    color:#FFF;
+    text-align:right;
+    font-size: 20px;
+    font-weight: 400;
+    margin:0;
+}
+
+.BuycreditCard .imgContent{
+    width: 96px;
+    height: 96px;
+    border-radius:50%;
+    background-color:rgba(0,0,0,0.5);
+    float: left;
+    margin:0;
+}
+
+.BuycreditCard label{
+    color:#FFF;
+    font-weight: 400;
+    margin: 8% 4% 0 0;
+    width:50%;
+}
+
+.BuycreditCard label span{
+    color:#FFF;
+    float:none;
+    font-size:30px;
+    margin:0 10px 0 0;
+}
+
+.dexel-Usecard{
+    background:#e4f2ef;
+    padding:2%;
+    border-radius:8px 8px;
+    margin-top:-1%;
+    margin-bottom:2%;
+    float: left;
+    width: 100%;
+    overflow:hidden;
+}
+
+.dexel-Usecard label
+{
+    color: #02c5c4;
+    font-size: 20px;
+    font-weight: 400;
+    width: 100%;
+    margin-bottom: 12px;
+    text-transform: capitalize;
+}
+
+.dexel-useCreditcard{
+    background:#246a92;
+    border:1px solid #bad3ce;
+    width:60%;
+    border-radius: 10px;
+    float: left;
+    box-shadow: 0px 6px 12px #676464;
+}
+
+.dexel-useCreditcardheader{
+    background:#0f384f;
+    padding:2% 2% 0% 6%;
+    border-bottom:1px solid #bad3ce;
+    border-radius: 10px 10px 0 0;
+    float: left;
+    width: 100%;
+}
+.dexel-useCreditcardheader input[type="text"]
+{
+    background:#092a3c;
+    border-radius:4px;
+    border:1px solid transparent;
+    padding:2%;
+    width:75%;
+    color:#FFF;
+}
+
+.dexel-useCreditcardheader img{
+    width:80px;
+    height: 45px;
+}
+
+.dexel-useCardcontainer{
+    margin-top:4%;
+    float:left;
+    padding:2% 6%;
+}
+
+.dexel-useCardcontainer input[type="tel"],
+.dexel-useCardcontainer input[type="text"]
+{
+    background:#165071;
+    float:left;
+    width:100%;
+    border:1px solid transparent;
+    text-align:center;
+    color:#FFF;
+    margin-top:10%;
+    margin-bottom:10%;
+}
+
+.dexel-useCardcontainer input[type="text"]{
+    width:84%;
+}
+
+.dexel-useCardcontainer span{
+    background:#0e3c56;
+    float:left;
+    margin-top:10%;
+    margin-bottom:10%;
+    padding: 1px 6px;
+}
+
+.dexel-useCardcontainer span img{
+    width: 14px;
+    height: 14px;
+}
+
+.dexel-Usecard button{
+    background:#246a92;
+    border:1px solid transparent;
+    border-radius:4px;
+    color:#FFF;
+    padding:1% 8%;
+    width:35%;
+    margin:4% 0 2%;
+}
+
+.dexel-useCreditcard.fade-card{
+    width: 135%;opacity: 0.5;
+}
+
+.dexel-Paymentsuccesspanel{
+    background: #e4f2ef;
+    padding: 2%;
+    border-radius: 8px 8px;
+    margin-top:2%;
+    margin-bottom: 2%;
+    float: left;
+    width: 100%;
+    overflow: hidden;
+}
+
+.dexel-PaymentAvatarPanel{
+    border-bottom:1px solid #CCC;
+}
+
+.dexel-PaymentsuccessCnt{
+    margin-top:4%;
+}
+
+.dexel-PaymentsuccessCnt label{
+    color:#5c5d5d;
+    font-size:20px;
+    font-weight:500;
+}
+
+.dexel-PaymentsuccessCnt p{
+    color:#5c5d5d;
+    font-size:16px;
+    width:75%;
+    margin:1% auto;
+}
+
+
+.dexel-PaymentsuccessCnt button{
+    background:#246a92;
+    border:1px solid transparent;
+    border-radius:4px;
+    color:#FFF;
+    padding:1% 6%;
+    margin:2% 0;
+    text-decoration: uppercase;
+}
+
+
+.dexel-customerAppheader label{
+    color:#565656;
+    width:100%;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.dexel-customerAppheader p{
+    color:#565656;
+    width: 85%;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+@media (max-width: 575px){
+
+     .dexel-customerAppheader p {
+            width:100%;
+        }
+}
+
+
+
+.dexel-customerAppheadercount{
+    border-top:1px solid #CCC;
+    border-bottom:1px solid #CCC;
+    float: left;
+    width: 100%;
+    padding:1% 0;
+    margin:2% 0;
+}
+
+.dexel-customerAppheadercount p{
+    color:#02c5c4;
+    font-size:18px;
+    font-weight:500;
+}
+
+.dexel-customerAppheadercount label{
+    color:#02c5c4;
+    width:100%;
+    font-size:18px;
+    font-weight:400;
+}
+
+.dexel-customerAppheadercount label span{
+    font-weight: 500;
+    margin-left:6px;
+}
+
+.dexel-customerAppThemearea label{
+    color:#777777;
+    width:100%;
+    line-height: 54px;
+    font-weight: 400;
+}
+
+.dexel-customerAppThemeselection{
+    background:#e4f2ef;
+    border:1px solid #CCC;
+    border-radius:4px;
+    box-shadow:inset 0px 0px 3px #CCC;
+    padding:0.5%;
+    margin:0 0 3%;
+    float:left;
+    width:100%;
+}
+
+.dexel-customerAppThemeselection a{
+    background: #3ec0e1;
+    color: #FFF;
+    padding: 1.5% 3%;
+    display: inline-block;
+    border-radius: 6px;
+    float: left;
+    margin: 0 2px;
+    -webkit-transition: all 0.3s linear 0s;
+            transition: all 0.3s linear 0s;
+}
+.dexel-customerAppThemeselection a:hover{
+    background:#7b3ee1;
+}
+
+.dexel-customerAppThemeselection a.active{
+    background:#7b3ee1;
+}
+
+.dexel-themePanel label{
+    color: #777777;
+    width: 100%;
+    font-weight: 400;
+}
+
+.dexel-themeCard{
+    background:url('../images/birthday-bg.png') no-repeat;
+    width:100%;
+    height:240px;
+    background-size: 100% 100%;
+    margin:3% 0;
+    padding-top:10%;
+}
+
+.dexel-themeCard input[type="text"]{
+    background:transparent;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #FFF;
+    width: 65%;
+    margin: 1% 0 2% 6%;
+    font-family:Lucida Calligraphy;
+    color:#FFF;
+    padding:0 1%;
+}
+
+.dexel-themeCard input[type="text"]::-webkit-input-placeholder {
+  color: #FFF;
+}
+.dexel-themeCard input[type="text"]::-moz-input-placeholder {
+  color: #FFF;
+}
+.dexel-themeCard input[type="text"]::-ms-input-placeholder {
+  color: #FFF;
+}
+
+.dexel-themeCard label{
+    font-size:16px;
+    color:#FFF;
+    margin-top:6%;
+    font-family:Lucida Calligraphy;
+    width:70%;
+}
+.dexel-themeCard label span{
+    font-size:26px;
+    font-weight:500;
+    color:#FFF;
+}
+
+.dexel-themeCard h6{
+    background:rgba(0,0,0,0.5);
+    color:#FFF;
+    border-radius:4px 0 0 0;
+    width:35%;
+    margin:3% 0 0;
+    font-family:Lucida Calligraphy;
+    font-size:15px;
+}
+
+.dexel-themeSendcard{
+    background:#0099d5;
+    padding:6% 2% 6% 8%;
+    float:left;
+    width:100%;
+    margin: 3% 0;
+    border-radius:5px;
+}
+.dexel-themeSendcard input[type="text"]{
+    border:1px solid transparent;
+    width:60%;
+    margin:0 0 6.5%;
+    padding:1%;
+    color:#0099d5;
+}
+#gift-Btn{
+    background:#0099d5;
+    border:1px solid transparent;
+    border-radius:4px;
+    color:#FFF;
+    padding:1% 6%;
+    margin:4% 0 2%;
+    -webkit-transition: all 0.3s linear 0s;
+            transition: all 0.3s linear 0s;
+}
+#gift-Btn:hover{
+    background:transparent;
+    color:#0099d5;
+    border:1px solid #0099d5;
+}
+
+.dexel-themeSendcard input[type="text"]::-webkit-input-placeholder {
+    color:#0099d5;
+}
+.dexel-themeSendcard input[type="text"]::-moz-input-placeholder {
+    color:#0099d5;
+}
+.dexel-themeSendcard input[type="text"]::-ms-input-placeholder {
+    color:#0099d5;
+}
+
+.dexel-sentConfirmationPanel{
+    background:#23e278;
+    padding:6% 4% 8%;
+    border-radius:6px;
+    margin:2% 0;
+    display: inline-block;
+    width:100%;
+}
+
+.dexel-sentConfirmationPanel label{
+    color:#FFF;
+    font-size:20px;
+    font-weight:500;
+}
+
+.dexel-toForm{
+    background:#246a92;
+    padding: 2% 2% 6%;
+    border-radius: 8px 8px;
+    margin-top: -1%;
+    float: left;
+    width: 100%;
+}
+
+.dexel-toForm label {
+    color: #02c5c4;
+    font-size: 20px;
+    font-weight: 400;
+    width: 100%;
+    text-transform: uppercase;
+    margin-bottom:2%;
+}
+.dexel-toForm input[type="text"],
+.dexel-toForm input[type="email"]
+{
+    border: 1px solid transparent;
+    width: 30%;
+    margin: 0 2% 0;
+    padding: 1%;
+    color: #0099d5;
+}
+
+.dexel-toForm input[type="text"]::-webkit-input-placeholder,
+.dexel-toForm input[type="email"]::-webkit-input-placeholder {
+    color:#0099d5;
+}
+.dexel-toForm input[type="text"]::-moz-input-placeholder,
+.dexel-toForm input[type="email"]::-moz-input-placeholder {
+    color:#0099d5;
+}
+.dexel-toForm input[type="text"]::-ms-input-placeholder,
+.dexel-toForm input[type="email"]::-ms-input-placeholder {
+    color:#0099d5;
+}
+
+.dexel-PurchaseBtn{
+    background:#1988a4;
+    border-radius:6px;
+    width:100%;
+    float:left;
+    margin:3% 0;
+    cursor:pointer;
+}
+.dexel-PurchaseBtn:first-child{
+    margin-top:22%;
+}
+.dexel-PurchaseBtn .dexel-PurchaseLeft{
+    background:#2d2136;
+    width:15%;
+    float:left;
+    border-radius:6px 0 0 6px;
+}
+.dexel-PurchaseBtn label{
+    color:#FFF;
+    font-size:16px;
+    width:75%;
+    float:left;
+    text-indent: 25px;
+}
+.dexel-PurchaseBtn span{
+    color:#FFF;
+    float:left;
+    width:75%;
+    font-size:30px;
+    text-indent: 25px;
+    font-family: Lucida Calligraphy;
+}
+
+.dexel-PurchaseBtn b{
+    color:#FFF;
+    font-size:20px;
+}
+
+.dexel-cerditNotification label{
+    width:100%;
+    font-size: 20px;
+    font-weight:500;
+    color:#777777;
+}
+/* =======================================================
+*
+*    Go to top of the Page Styles
+*
+* ======================================================= */
+
+.gototop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.gototop.active {
+    opacity: 1;
+    visibility: visible;
+}
+.gototop a {
+    width: 50px;
+    height: 50px;
+    display: table;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+}
+.gototop a i {
+    height: 50px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.gototop a:hover,
+.gototop a:active,
+.gototop a:focus {
+    text-decoration: none;
+    outline: none;
+}
+.js .animate-box {
+    opacity: 0;
+}
+
+
+@-moz-keyframes pulse {
+ 0% {
+    -webkit-transform: scale(0);
+    opacity: 0.0;
+ }
+ 25% {
+    -webkit-transform: scale(0);
+    opacity: 0.5;
+ }
+ 50% {
+    -webkit-transform: scale(0.1);
+    opacity: 0.8;
+ }
+ 75% {
+    -webkit-transform: scale(0.5);
+    opacity: 0.9;
+ }
+ 90% {
+    -webkit-transform: scale(0.8);
+    opacity: 1;
+ }
+ 100% {
+    -webkit-transform: scale(1);
+    opacity: 0.0;
+ }
+}
+
+
+@keyframes pulse {
+ 0% {
+    -webkit-transform: scale(0);
+    opacity: 0.0;
+ }
+ 25% {
+    -webkit-transform: scale(0);
+    opacity: 0.5;
+ }
+ 50% {
+    -webkit-transform: scale(0.1);
+    opacity: 0.8;
+ }
+ 75% {
+    -webkit-transform: scale(0.5);
+    opacity: 0.9;
+ }
+ 90% {
+    -webkit-transform: scale(0.8);
+    opacity: 1;
+ }
+ 100% {
+    -webkit-transform: scale(1);
+    opacity: 0.0;
+ }
+}
+
+
+@-webkit-keyframes pulse {
+ 0% {
+    -webkit-transform: scale(0);
+    opacity: 0.0;
+ }
+ 25% {
+    -webkit-transform: scale(0);
+    opacity: 0.5;
+ }
+ 50% {
+    -webkit-transform: scale(0.1);
+    opacity: 0.8;
+ }
+ 75% {
+    -webkit-transform: scale(0.5);
+    opacity: 0.9;
+ }
+ 90% {
+    -webkit-transform: scale(0.8);
+    opacity: 1;
+ }
+ 100% {
+    -webkit-transform: scale(1);
+    opacity: 0.0;
+ }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .dexel-useCreditcard{
+        width:100%;
+    }
+}
+
+
+
+
+
+@media (min-width: 768px) {
+  .nav-tabs-justified > li > a, .nav-tabs.nav-justified > li > a {
+    border-bottom: 1px solid transparent;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width:909px) {
+	.dexel-coursePanel{
+		margin-top:8%;
+	}
+
+	.dexel-useCreditcard{
+		width:100%;
+	}
+
+	.dexel-creditsCountpanel label{
+		margin-left:30%;
+	}
+
+	.dexel-creditsCountpanel h4{
+		text-align:right;
+		width:90%;
+	}
+}
+
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .dexel-customerApp-maincontainer {
+                margin-top: 15%;
+            }
+}
+
+
+
+@media (max-width: 575px){
+
+    .dexel-customerApp-maincontainer {
+        margin-top: 15%;
+    }
+
+    .dexel-customerAppThemeselection{
+           margin:5% 0;
+    }
+
+    .dexel-customerAppThemeselection a{
+        width: 99%;
+        margin:1% 2px;
+    }
+
+    .dexel-themeSendcard{
+        padding-left:2%;
+    }
+    .dexel-themeSendcard input[type="text"]{
+        width:100%;
+    }
+
+    .dexel-useCreditcard{
+        width:100%;
+    }
+
+    .dexel-useCreditcardheader img {
+        width: 55px;
+        height: 38px;
+    }
+
+    .dexel-Usecard button{
+        width:100%;
+    }
+
+    .dexel-useCreditcard.fade-card{
+        width:100%;
+    }
+
+    .dexel-toForm input[type="text"], .dexel-toForm input[type="email"]{
+        width:100%;
+        margin:1% 0;
+    }
+
+    .dexel-Paymentheader a{
+        width:30px;
+        height:30px;
+    }
+
+    .dexel-useCardcontainer input[type="text"]{
+        width:80%;
+    }
+}

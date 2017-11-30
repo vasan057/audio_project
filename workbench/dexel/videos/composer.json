@@ -1,0 +1,23 @@
+{
+    "name": "dexel/videos",
+    "description": "",
+    "authors": [
+        {
+            "name": "Manikandan R",
+            "email": "mani@dexeldesigns.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "illuminate/support": "5.4.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-4": {
+            "Dexel\\Videos\\": "src/Dexel/Videos"
+        }
+    },
+    "minimum-stability": "stable"
+}

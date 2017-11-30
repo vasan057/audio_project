@@ -1,0 +1,23 @@
+{
+    "name": "dexel/contact",
+    "description": "The Contact package",
+    "authors": [
+        {
+            "name": "Manikandan R",
+            "email": "mani@dexeldesigns.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "illuminate/support": "5.4.*"
+    },
+    "autoload": {
+        "files": [
+            "src/helpers/helpers.php"
+        ],
+        "psr-4": {
+            "Dexel\\Contact\\": "src/Dexel/Contact"
+        }
+    },
+    "minimum-stability": "stable"
+}
